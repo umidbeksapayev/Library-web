@@ -1,0 +1,55 @@
+a{
+  text-decoration: none;
+}
+.header{
+  width: 100%;
+  padding: 20px 10%;
+  background-color: rgb(185, 209, 228);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#logo {
+  font-size: 32px;
+  color: rgb(122, 114, 114);
+  font-weight: 900;
+
+}
+
+
+.nav a{
+  position: relative;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin-left: 70px;
+}
+
+
+.header a {
+  cursor: pointer;
+  
+}
+
+.login a{
+  margin-left: 1rem;
+  color: #f0eded;
+}
+
+.nav a::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: .3s;
+}
+
+.nav a:hover::before{
+  width: 100%;
+  color: red;
+}
+
