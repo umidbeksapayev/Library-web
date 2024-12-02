@@ -1,0 +1,55 @@
+.home{
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.home-text p{
+  margin-top: 1rem;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+.home-text h1 {
+  color: rgb(71, 72, 71);
+  width: 600px;
+  margin-top: 100px;
+  font-size:60px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.home-img img {
+  width: 70%;
+  height: 100%;
+  margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------- */
+
+.home-h2{
+  margin-top: 10rem;
+  /* margin-left: 2.5rem; */
+  color: rgb(18, 81, 18);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+
+.card-container{
+  margin-bottom: 10rem;
+}

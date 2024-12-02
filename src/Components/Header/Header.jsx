@@ -1,14 +1,19 @@
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
-import React from 'react';
+import React, {useState} from 'react';
 import './Header.css';
 
+
 const Header = () => {
+  const [showNav, setshowNav] = useState(false)
+  const signHandle=()=>{
+    setshowNav(false)
+  }
   return (
-    <header className='header'>
+    <header className="header">
       <Link to='/login' id='logo'>BookLogo</Link>
       
       <nav className='nav'>
-        <ul>
+        <ul >
           <Link to='/'>Home</Link>
           <Link to='/books'>Books</Link>
           <Link to='/categories'>Categories</Link>
@@ -18,8 +23,8 @@ const Header = () => {
         </ul>
       </nav>
       <div className="login">
-        <Link to='/signup'>Sign in</Link>
-        <Link to='/login' id='login'>Sign up</Link>
+        <Link onClick={signHandle} to='/signup'>Sign up</Link>
+        <Link onClick={signHandle} to='/signin' id='login'>Sign in</Link>
       </div>
     </header>
   );
