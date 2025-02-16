@@ -2,11 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 2.5rem;
-  margin-left: 2.5rem;
+  margin-left: 8rem;
 }
 .card {
-  margin: 20px;
-  /* margin-left: 2.5rem; */
+  margin-bottom: 10px;
+  margin-left: 1rem;
   border: 2px solid #ededed;
   padding: 20px;
   cursor: pointer;
@@ -24,7 +24,7 @@
 
 
 .c-btn{
-  margin-top: 3.3rem;
+  margin-top: 1.3rem;
   padding: 0.7rem 1.2rem;
   background-color: white;
   border: 2px solid #e2dfdf;
@@ -51,4 +51,16 @@
 .author{
   font-size: 0.9rem;
   opacity: 0.6;
+}
+
+.bar-buttons{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 18.2vw;
+  height: 50rem;
+  padding: 80px 50px;
+  z-index: 1;
+  overflow: auto;
+  resize: vertical;
 }

@@ -2,6 +2,7 @@ a{
   text-decoration: none;
 }
 .header{
+  position: static;
   width: 100%;
   padding: 20px 10%;
   background-color: #fff;
@@ -9,6 +10,8 @@ a{
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
 }
 #logo {
   font-size: 32px;

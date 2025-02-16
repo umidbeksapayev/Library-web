@@ -1,13 +1,20 @@
-const BASE_URL = ""
+const BASE_URL = "http://localhost:8080/books"
 
 // Kitoblar ro'yxatini olish
 
 export async function fetchBooks() {
-  const response = await fetch (BASE_URL);
-  if (!response){
-    throw new Error("Failed to fetch books");
+  try{
+    const response = await fetch (BASE_URL);
+    if (!response.ok){
+      throw new Error("Failed to fetch books");
+    }
+    return await response.json();
+    
+  } catch(error){
+    console.error("Kitobda olishda xatolik:", error);
+    
   }
-  return response.json()
+  console.log( await fetchBooks());
 }
 
 // Kitob qo'shish 
@@ -21,5 +28,5 @@ export async function createBook(book) {
   if(!response.ok){
     throw new Error("Failed to create book");
   }
-  return response.json()
+  return await response.json()
 }

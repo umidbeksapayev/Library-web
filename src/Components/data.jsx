@@ -63,4 +63,20 @@ export const data = [
     author:"Fotih Duman",
     category:"Bolalar adabiyoti"
   },
+  {
+    id:9,
+    img:"https://meningkitobim.uz/wp-content/uploads/2024/07/photo_2024-07-05_14-19-03-600x600.avif",
+    title:"Yo'q",
+    description:"djfdj kasdn jdsch heedg skhe ",
+    author:"Jek Hull",
+    category:"Jahon adabiyotlar"
+  },
+  {
+    id:10,
+    img:"https://meningkitobim.uz/wp-content/uploads/2024/07/photo_2024-07-05_14-19-03-600x600.avif",
+    title:"Yo'q",
+    description:"djfdj kasdn jdsch heedg skhe ",
+    author:"Jek Hull",
+    category:"Jahon adabiyotlar"
+  },
 ]
